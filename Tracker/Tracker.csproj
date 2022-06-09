@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.5.5.4823" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.5.5.4823" />
+    <PackageReference Include="IronPython" Version="2.7.12" />
+    <PackageReference Include="Mediapipe.Net" Version="0.8.10" />
+    <PackageReference Include="Mediapipe.Net.Runtime.CPU" Version="0.8.9.1" />
+    <PackageReference Include="NumSharp" Version="0.30.0" />
+    <PackageReference Include="NumSharp.Bitmap" Version="0.30.0" />
+    <PackageReference Include="Python.Runtime.AllPlatforms" Version="3.7.2.4" />
+    <PackageReference Include="SeeShark" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\iris.py" />
+    <None Include="bin\Debug\net6.0-windows\mediapipe\graphs\face_mesh\face_mesh_desktop_live.pbtxt" />
+  </ItemGroup>
+
+</Project>
