@@ -36,7 +36,7 @@ namespace Tracker
         }
 
 
-        private unsafe void ProcessFrame(object sender, EventArgs e)
+        private void ProcessFrame(object sender, EventArgs e)
         {
             Image<Bgr, byte> image = capture.QueryFrame().ToImage<Bgr, Byte>();
             Image image_bmp = byteArrayToImage(image.ToJpegData());
